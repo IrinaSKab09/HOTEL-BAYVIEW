@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=ho, initial-scale=1.0">
+  <title>hotel bayview</title>
+  <link href="https://fonts.googleapis.com/css2?family=Gilda+Display&family=Roboto:wght@300;400;900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="reset.css">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="list.css">
+</head>
+
+<body>
+  <div class="container">
+    <header class="header">
+      <div class="header__container">
+        <img src="img/logo.svg" alt="logo" class="header__logo">
+        <nav class="navigation">
+          <a href="index.html" class="navigition__link">Home</a>
+          <a href="list.html" class="navigition__link">Rooms</a>
+          <a href="room.html" class="navigition__link">Single Room</a>
+          <a href="#" class="navigition__link">Booking</a>
+          <a href="#" class="navigition__link">Our News</a>
+          <a href="#" class="navigition__link">Contact</a>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <div class="search">
+        <h1 class="title search__title">SEARCH</h1>
+      </div>
+      <section class="list">
+        <div class="list__content">
+          <form class="form list__form">
+            <div class="form__inner">
+              <h2 class="form__title">All Branches</h2>
+              <div class="form__wrap">
+                <div class="form__input-group form__input-group-bottom form__input-group-width">
+                  <label for="date-in" class="form__label form__label-light">CHECK-IN</label>
+                  <div class="form__part">
+                    <input type="text" autocomplete="off" class="form__input form__input-black" id="date-in"
+                      placeholder="26">
+                    <select size="1" class="form__select form__select-black">
+                      <option value="">Jan</option>
+                      <option value="">Feb</option>
+                      <option value="">Mar</option>
+                      <option value="">Apr</option>
+                      <option value="">May</option>
+                      <option selected value="">Jun</option>
+                      <option value="">Jul</option>
+                      <option value="">Aug</option>
+                      <option value="">Sep</option>
+                      <option value="">Oct</option>
+                      <option value="">Nov</option>
+                      <option value="">Dec</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="form__input-group form__input-group-bottom form__input-group-width">
+                  <label for="date-out" class="form__label form__label-light">CHECK-OUT</label>
+                  <div class="form__part">
+                    <input type="text" autocomplete="off" class="form__input form__input-black" id="date-out"
+                      placeholder="28">
+                    <select size="1" class="form__select form__select-right form__select-black">
+                      <option value="">Jan</option>
+                      <option value="">Feb</option>
+                      <option value="">Mar</option>
+                      <option value="">Apr</option>
+                      <option value="">May</option>
+                      <option selected value="">Jun</option>
+                      <option value="">Jul</option>
+                      <option value="">Aug</option>
+                      <option value="">Sep</option>
+                      <option value="">Oct</option>
+                      <option value="">Nov</option>
+                      <option value="">Dec</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="form__input-group form__input-group-width">
+                  <label for="guests" class="form__label form__label-light">GUESTS</label>
+                  <input type="text" autocomplete="off" class="form__input form__input-black form__input-left"
+                    id="guests" placeholder="1">
+                </div>
+                <div class="form__input-group form__input-group-width">
+                  <label for="nights" class="form__label form__label-light">NIGHTS</label>
+                  <input type="text" autocomplete="off" class="form__input form__input-black form__input-left"
+                    id="nights" placeholder="2">
+                </div>
+              </div>
+            </div>
+            <div class="form__services">
+              <h2 class="form__title form__title-grey">Services</h2>
+              <div class="form__option">
+                <ul class="form__element">
+                  <li class="form__item">
+                    <input type="checkbox" class="form__checkbox" id="Animal">
+                    <label for="Animal" class="text">Animal Allowed</label>
+                  </li>
+                  <li class="form__item">
+                    <input type="checkbox" class="form__checkbox" id="Smooking">
+                    <label for="Smooking" class="text">Smooking Room</label>
+                  </li>
+                  <li class="form__item">
+                    <input type="checkbox" class="form__checkbox" id="Sea">
+                    <label for="Sea" class="text">Sea View</label>
+                  </li>
+                </ul>
+                <ul class="form__element">
+                  <li class="form__item">
+                    <input type="checkbox" class="form__checkbox" id="Swimming">
+                    <label for="Swimming" class="text">Swimming Pool</label>
+                  </li>
+                  <li class="form__item">
+                    <input type="checkbox" class="form__checkbox" id="Wifi">
+                    <label for="Wifi" class="text">Wifi 24 H</label>
+                  </li>
+                  <li class="form__item">
+                    <input type="checkbox" class="form__checkbox" id="Breakfast">
+                    <label for="Breakfast" class="text">Breakfast Included</label>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="form__size">
+              <h2 class="form__title form__title-grey form__title-bottom">Room Size</h2>
+              <span class="form__number form__number-big">0.0</span>-<span
+                class="form__number form__number-big form__number-left">100</span><span class="form__letter">M2</span>
+            </div>
+            <div class="form__reviews">
+              <h2 class="form__title form__title-grey form__title-bottom">Reviews</h2>
+              <ul>
+                <li class="form__number form__number-color">0.0</li>
+                <li class="form__number form__number-color">2.0</li>
+                <li class="form__number form__number-color">4.0</li>
+                <li class="form__number form__number-color">6.0</li>
+                <li class="form__number form__number-color">8.0</li>
+                <li class="form__number form__number-color">10</li>
+              </ul>
+            </div>
+          </form>
+          <div class="rooms__images">
+            <a href="room.html" class="list__inner">
+              <div class="rooms__wrap">
+                <img src="img/rooms/Adriatic_Suite.jpg" class="list__image" alt="Adriatic Suite">
+                <h5 class="rooms__caption">Adriatic Suite</h5>
+              </div>
+              <div class="list__description">
+                <h5 class="rooms__title-small">Adriatic suite</h5>
+                <div class="rooms__part rooms__part-bottom">
+                  <span class="rooms__item">7.5</span>
+                  <span class="rooms__element">2 Reviews</span>
+                  <img src="img/rooms/user.svg" class="rooms__icon" alt="">
+                  <span class="rooms__element">3 guests</span>
+                  <img src="img/rooms/plan.svg" class="rooms__icon" alt="">
+                  <span class="rooms__element">57 M<sup>2</sup></span>
+                </div>
+                <p class="text rooms__text">Offering 2 balconies and views of Rovinj's
+                  Main&nbsp;Square and the lively waterfront.</p>
+                <button class="button list__button">BOOK NOW for 300$</button>
+              </div>
+            </a>
+            <a href="room.html" class="list__inner">
+              <div class="rooms__wrap">
+                <img src="img/rooms/Atelier.jpg" class="list__image" alt="Atelier">
+                <h5 class="rooms__caption">Atelier</h5>
+              </div>
+              <div class="list__description">
+                <h5 class="rooms__title-small">Atelier</h5>
+                <div class="rooms__part rooms__part-bottom">
+                  <span class="rooms__item">8.5</span>
+                  <span class="rooms__element">5 Reviews</span>
+                  <img src="img/rooms/user.svg" class="rooms__icon" alt="">
+                  <span class="rooms__element">2 guests</span>
+                  <img src="img/rooms/plan.svg" class="rooms__icon" alt="">
+                  <span class="rooms__element">25 M<sup>2</sup></span>
+                </div>
+                <p class="text rooms__text">Inspired by a workshop, Atelier rooms
+                  are&nbsp;a&nbsp;part&nbsp;of the old town’s center.</p>
+                <button class="button list__button">BOOK NOW for 132$</button>
+              </div>
+            </a>
+            <a href="room.html" class="list__inner">
+              <div class="rooms__wrap">
+                <img src="img/rooms/Gallery.jpg" class="list__image" alt="Gallery">
+                <h5 class="rooms__caption">Gallery</h5>
+              </div>
+              <div class="list__description">
+                <h5 class="rooms__title-small">Gallery</h5>
+                <div class="rooms__part rooms__part-bottom">
+                  <span class="rooms__item">9.5</span>
+                  <span class="rooms__element">4 Reviews</span>
+                  <img src="img/rooms/user.svg" class="rooms__icon" alt="">
+                  <span class="rooms__element">2 guests</span>
+                  <img src="img/rooms/plan.svg" class="rooms__icon" alt="">
+                  <span class="rooms__element">37 M<sup>2</sup></span>
+                </div>
+                <p class="text rooms__text">Set at the very top floor of the hotel,
+                  this&nbsp;suite&nbsp;is air-conditioned.</p>
+                <button class="button list__button list__button-bottom">BOOK NOW for 435$</button>
+              </div>
+            </a>
+            <a href="room.html" class="list__inner">
+              <div class="rooms__wrap">
+                <img src="img/rooms/Grand_Piazza_Suite.jpg" class="list__image" alt="Grand Piazza Suite">
+                <h5 class="rooms__caption">Grand Piazza Suite</h5>
+              </div>
+              <div class="list__description">
+                <h5 class="rooms__title-small">Grand Piazza Suite</h5>
+                <div class="rooms__part rooms__part-bottom">
+                  <span class="rooms__item">9.8</span>
+                  <span class="rooms__element">7 Reviews</span>
+                  <img src="img/rooms/user.svg" class="rooms__icon" alt="">
+                  <span class="rooms__element">4 guests</span>
+                  <img src="img/rooms/plan.svg" class="rooms__icon" alt="">
+                  <span class="rooms__element">78 M<sup>2</sup></span>
+                </div>
+                <p class="text rooms__text">Offering views of Rovinj's Main Square,
+                  this&nbsp;spacious suite is air-conditioned.</p>
+                <button class="button list__button list__button-bottom">BOOK NOW for 610$</button>
+              </div>
+            </a>
+          </div>
+        </div>
+      </section>
+      <div class="footer__black"></div>
+    </main>
+  </div>
+</body>
+
+</html>

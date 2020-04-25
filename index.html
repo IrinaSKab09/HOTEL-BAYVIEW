@@ -9,6 +9,7 @@
     rel="stylesheet">
   <link rel="stylesheet" href="reset.css">
   <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="main.css">
 </head>
 
 <body>
@@ -17,9 +18,9 @@
       <div class="header__container">
         <img src="img/logo.svg" alt="logo" class="header__logo">
         <nav class="navigation">
-          <a href="#" class="navigition__link">Home</a>
-          <a href="#" class="navigition__link">Rooms</a>
-          <a href="#" class="navigition__link">Single Room</a>
+          <a href="index.html" class="navigition__link">Home</a>
+          <a href="list.html" class="navigition__link">Rooms</a>
+          <a href="room.html" class="navigition__link">Single Room</a>
           <a href="#" class="navigition__link">Booking</a>
           <a href="#" class="navigition__link">Our News</a>
           <a href="#" class="navigition__link">Contact</a>
@@ -30,7 +31,7 @@
       <section class="information">
         <h5 class="information__subtitle">LUXURY HOTEL & BEST RESORT</h5>
         <h1 class="information__title">ENJOY A LUXURY EXPERIENCE</h1>
-        <button class="button information__button">ROOMS & SUITES</button>
+        <a href="list.html" class="button information__button">ROOMS & SUITES</a>
         <form class="form information__form">
           <div class="form__choice">
             <div class="form__input-group form__input-group-right">
@@ -74,7 +75,7 @@
               <input type="text" autocomplete="off" class="form__input" id="guests" placeholder="1">
             </div>
           </div>
-          <button class="button form__button">CHECK AVAILABILITY</button>
+          <a href="list.html" class="button form__button">CHECK AVAILABILITY</a>
         </form>
       </section>
       <section class="about">
@@ -98,7 +99,7 @@
         <h4 class="subtitle rooms__subtitle">HOTEL BAYVIEW</h4>
         <h3 class="rooms__title">Best Rooms</h3>
         <div class="rooms__content">
-          <div class="rooms__inner">
+          <a href="room.html" class="rooms__inner">
             <div class="rooms__wrap">
               <img src="img/rooms/Adriatic_Suite.jpg" alt="Adriatic Suite">
               <h5 class="rooms__caption">Adriatic Suite</h5>
@@ -117,31 +118,33 @@
                 the lively waterfront and the main promenade.</p>
               <button class="button rooms__button">BOOK NOW FROM 300$</button>
             </div>
-          </div>
+          </a>
           <ul class="rooms__images">
             <li class="rooms__wrap rooms__wrap-bottom">
-              <img src="img/rooms/Atelier.jpg" alt="Atelier" class="rooms__image">
-              <h5 class="rooms__caption">Atelier</h5>
+              <a href="room.html">
+                <img src="img/rooms/Atelier.jpg" alt="Atelier" class="rooms__image">
+                <h5 class="rooms__caption">Atelier</h5>
+              </a>
             </li>
             <li class="rooms__wrap rooms__wrap-bottom">
-              <img src="img/rooms/Piazza.jpg" alt="Piazza" class="rooms__image">
-              <h5 class="rooms__caption">Piazza</h5>
+              <a href="room.html">
+                <img src="img/rooms/Piazza.jpg" alt="Piazza" class="rooms__image">
+                <h5 class="rooms__caption">Piazza</h5>
+              </a>
             </li>
             <li class="rooms__wrap">
-              <img src="img/rooms/Gallery.jpg" alt="Gallery" class="rooms__image">
-              <h5 class="rooms__caption">Gallery</h5>
+              <a href="room.html">
+                <img src="img/rooms/Gallery.jpg" alt="Gallery" class="rooms__image">
+                <h5 class="rooms__caption">Gallery</h5>
+              </a>
             </li>
             <li class="rooms__wrap">
-              <img src="img/rooms/Grand_Piazza_Suite.jpg" alt="Grand Piazza Suite" class="rooms__image">
-              <h5 class="rooms__caption">Grand Piazza Suite</h5>
+              <a href="room.html">
+                <img src="img/rooms/Grand_Piazza_Suite.jpg" alt="Grand Piazza Suite" class="rooms__image">
+                <h5 class="rooms__caption">Grand Piazza Suite</h5>
+              </a>
             </li>
           </ul>
-          <!-- <div class="rooms__images"> 
-              <img src="img/rooms/Atelier.jpg" alt="Atelier" class="rooms__image">
-              <img src="img/rooms/Piazza.jpg" alt="Piazza" class="rooms__image">
-              <img src="img/rooms/Gallery.jpg" alt="Gallery" class="rooms__image">
-              <img src="img/rooms/Grand_Piazza_Suite.jpg" alt="Grand Piazza Suite" class="rooms__image">
-            </div> -->
         </div>
       </section>
       <section class="hotel">
@@ -170,7 +173,7 @@
     </main>
     <footer class="footer">
       <nav class="footer__navigation">
-        <a href="#" class="footer__link">Home</a>
+        <a href="index.html" class="footer__link">Home</a>
         <a href="#" class="footer__link">About Us</a>
         <a href="#" class="footer__link">Services</a>
         <a href="#" class="footer__link">Booking</a>
