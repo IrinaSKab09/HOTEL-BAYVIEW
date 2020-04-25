@@ -18,7 +18,7 @@
 }
 
 .room__navigation {
-  max-width: 478px;
+  max-width: 477px;
   width: 100%;
   padding-top: 6px;
   font-size: 9px;
@@ -267,4 +267,10 @@
   width: 100%;
   background-color: #c19b76;
   border: solid 1.5px #c19b76;
+}
+
+@media (min-width: 1680px) {
+  .room__navigation {
+    max-width: 577px;
+  }
 }
