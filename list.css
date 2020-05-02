@@ -87,7 +87,7 @@
 .form__input-group-width {
   flex-direction: column;
   box-sizing: border-box;
-  max-width: 110px;
+  max-width: 100px;
   width: 100%;
 }
 
@@ -108,7 +108,7 @@
 }
 
 .form__input-black {
-  margin-right: 0;
+  margin-right: 3px;
   width: 50px;
   background-color: #151515;
   border: solid 0.8px #151515;
@@ -273,16 +273,6 @@
   margin-right: 8px;
 }
 
-.rooms__icon {
-  width: 17px;
-  height: 17px;
-}
-
-.rooms__text {
-  margin-bottom: 16px;
-  letter-spacing: 0.64px;
-}
-
 .rooms__button {
   padding: 7px 20px 5px 26px;
   background-color: #1c1c1c;
@@ -307,8 +297,419 @@
   flex-wrap: wrap;
 }
 
-.footer__black {
-  margin-bottom: 45px;
-  height: 69px;
-  background-color: #151515;
+@media screen and (min-width: 1024px) and (max-width: 1439px) {
+  .search {
+    padding: 54px 0 42px 0;
+  }
+
+  .search__title {
+    font-size: 32px;
+    line-height: 1.48;
+  }
+
+  .list {
+    padding: 33px 0 92px 0;
+  }
+
+  .list__content {
+    margin: 0 190px 0 201px;
+  }
+
+  .list__form {
+    margin-right: 13px;
+    max-width: 209px;
+  }
+
+  .list__inner {
+    margin-bottom: 24px;
+    max-width: 198px;
+  }
+
+  .form__inner {
+    padding-top: 25px;
+    padding-bottom: 27px;
+  }
+
+  .form__inner::after {
+    bottom: -17px;
+    width: 199px;
+  }
+
+  .form__wrap {
+    padding: 0 27px 0 10px;
+  }
+
+  .form__title {
+    margin-bottom: 29px;
+    font-size: 11px;
+    line-height: 1.32;
+    letter-spacing: 0.15px;
+  }
+
+  .form__label {
+    font-size: 9px;
+    line-height: 1.61;
+    letter-spacing: 0.72px;
+  }
+
+  .form__input {
+    font-size: 27px;
+    line-height: 0.54;
+    letter-spacing: -1.62px;
+  }
+
+  .form__input-group-width {
+    max-width: 80px;
+  }
+
+  .form__input-group-bottom {
+    margin-bottom: 17px;
+  }
+
+  .form__input-black {
+    width: 33px;
+  }
+
+  .form__input-left {
+    padding-left: 20px;
+  }
+
+  .form__label {
+    margin-bottom: 0;
+  }
+
+  .form__services {
+    padding-top: 27px;
+  }
+
+  .form__services::after {
+    margin-top: 4px;
+    width: 199px;
+  }
+
+  .form__title-grey {
+    margin-bottom: 7px;
+  }
+
+  .form__option {
+    padding: 0;
+  }
+
+  .form__checkbox + .text::before {
+    height: 8px;
+    width: 8px;
+  }
+
+  .form__size {
+    padding-top: 21px;
+  }
+
+  .form__size::after {
+    margin-top: 14px;
+    width: 199px;
+  }
+
+  .form__title-bottom {
+    margin-bottom: 9px;
+  }
+
+  .form__number-big {
+    margin-left: 3px;
+    padding: 1px 14px 1px 4px;
+  }
+
+  .form__reviews {
+    padding-top: 6px;
+  }
+
+  .form__number {
+    margin-right: 3px;
+    padding-left: 2px;
+    padding-top: 2px;
+    width: 19px;
+    height: 15px;
+    font-size: 8px;
+    line-height: 1.81;
+    letter-spacing: -0.16px;
+  }
+
+  .rooms__wrap {
+    height: 135px;
+  }
+
+  .rooms__caption {
+    left: 16px;
+    bottom: 5px;
+    letter-spacing: 2px;
+  }
+  
+  .list__image {
+    width: 198px;
+    height: 135px;
+  }
+
+  .list__description {
+    padding-top: 11px;
+    padding-left: 15px;
+  }
+
+  .list__description .text {
+    line-height: 2;
+  }
+
+  .list__button {
+    margin-bottom: 24px;
+    padding: 3px 27px 2px 38px;
+    width: 166px;
+    line-height: 1.5;
+  }
+
+  .rooms__title-small {
+    margin-bottom: 7px;
+    font-size: 16px;
+    line-height: 0.72;
+  }
+
+  .rooms__part-bottom {
+    margin-bottom: 6px;
+  }
+
+  .rooms__item {
+    padding: 2px 6px;
+  }
+
+  .rooms__element {
+    margin-right: 2px;
+  }
+
+}
+
+@media screen and (max-width: 1023px) {
+
+  .search {
+    padding: 86px 0 89px 0;
+  }
+
+  .search__title {
+    font-size: 48px;
+    line-height: 0.63;
+    letter-spacing: -0.8px;
+  }
+
+  .list {
+    margin: 0 auto;
+    padding: 32px 0 18px 0;
+  }
+
+  .list__content {
+    flex-direction: column;
+    max-width: 527px;
+  }
+
+  .list__form {
+    margin-right: 0;
+    max-width: 527px;
+  }
+
+  .form__inner {
+    flex-direction: column;
+    padding-top: 17px;
+    padding-bottom: 0;
+  } 
+
+  .form__inner::after {
+    display: none;
+  }
+
+  .form__title {
+    margin-bottom: 24px;
+    font-size: 22px;
+    line-height: 0.41;
+    letter-spacing: 0.4px;
+    text-align: center;
+  }
+
+  .form__label {
+    margin-bottom: 10px;
+    font-size: 14px;
+    line-height: 0.64;
+    letter-spacing: 2.7px;
+  }
+
+  .form__part {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .form__select {
+    margin-left: 15px;
+    font-size: 20px;
+    line-height: 1;
+    letter-spacing: -1.2px;
+  }
+
+  .form__select-black {
+    padding-top: 7px;
+  }
+
+  .form__wrap {
+    height: 114px;
+    padding: 0 45px 0 21px;
+  }
+
+  .form__input-group {
+    margin-right: 12px;
+  }
+
+  .form__input-group-bottom {
+    margin-bottom: 0;
+  }
+
+  .form__services {
+    padding-top: 41px;
+  }
+
+  .form__services::after {
+    display: none;
+  } 
+
+  .form__option {
+    padding: 0 21px 0 54px;
+  }
+
+  .form__services .form__title-grey {
+    margin-bottom: 30px;
+  }
+
+  .form__item {
+    margin-bottom: 15px;
+  }
+
+  .form .text {
+    font-size: 16px;
+    line-height: 0.56;
+    letter-spacing: 0.96px;
+  }
+
+  .form__checkbox + .text::before {
+    height: 14px;
+    width: 14px;
+  }
+
+  .form__size {
+    padding-top: 30px;
+  }
+
+  /* .form__number-big {
+    margin-left: 4px;
+    margin-right: 11px;
+    padding: 3px 18px 0 7px;
+    background-color: #1c1c1c;
+    font-family: 'Roboto', sans-serif;
+    font-size: 9.5px;
+    line-height: 2.16;
+    letter-spacing: -0.19px;
+    color: #ffffff;
+  } */
+
+  .form__size::after {
+    display: none;
+  }
+  
+  .form__size-input {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    max-width: 210px;
+  }
+
+  .form__input-big {
+    width: 67px;
+    height: 25px;
+  }
+
+  .form__reviews {
+    padding-top: 45px;
+  }
+
+  .form__reviews .form__title-bottom {
+    margin-bottom: 49px;
+  }
+
+  .form__numbers {
+    margin-left: 67px;
+    max-width: 396px;
+  }
+
+  .form__number {
+    box-sizing: border-box;
+    margin-right: 12px;
+    padding: 8px 15px;
+    width: 49px;
+    height: 24px;
+    font-size: 14px;
+    line-height: 0.64;
+    letter-spacing: -0.28px;
+  }
+
+  .rooms__images {
+    padding-top: 56px;
+    padding-left: 15px;
+  }
+
+  .rooms__part {
+    display: none;
+  }
+
+  .list__inner {
+    display: flex;
+    padding: 17px;
+    margin-bottom: 21px;
+    max-width: 468px;
+    height: 131px;
+    border: solid 1px #a3a3a3;
+  }
+
+  .list__inner-revers {
+    flex-direction: row-reverse;
+  }
+
+  .rooms__wrap {
+    height: 133px;
+  }
+
+  .list__image {
+    width: 198px;
+    height: 133px;
+  }
+
+  .list__description {
+    padding-top: 0;
+    border: none;
+  }
+
+  .rooms__title-small {
+    font-size: 22px;
+    line-height: 0.7;
+  }
+
+  .rooms__text {
+    margin-bottom: 9px;
+    font-size: 16px;
+    line-height: 1.5;
+  }
+
+  .rooms__caption {
+    left: 13px;
+    bottom: 17px;
+    font-size: 14px;
+    line-height: 0.64;
+    letter-spacing: 1.4px;
+  }
+
+  .list__button {
+    margin-bottom: 10px;
+    padding: 2px 25px 1px 11px;
+  }
+
 }

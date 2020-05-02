@@ -126,18 +126,22 @@
             </div>
             <div class="form__size">
               <h2 class="form__title form__title-grey form__title-bottom">Room Size</h2>
-              <span class="form__number form__number-big">0.0</span>-<span
-                class="form__number form__number-big form__number-left">100</span><span class="form__letter">M2</span>
+              <!-- <span class="form__number form__number-big">0.0</span>-<span
+                class="form__number form__number-big form__number-left">100</span><span class="form__letter">M2</span> -->
+                <div class="form__size-input">
+                  <input type="text" class="form__input-black form__input-big" placeholder="0.0">-<input type="text" class="form__input-black form__input-big" placeholder="0.0">
+                  <span class="form__letter">M2</span>
+                </div>
             </div>
             <div class="form__reviews">
               <h2 class="form__title form__title-grey form__title-bottom">Reviews</h2>
-              <ul>
+              <ul class="form__numbers">
                 <li class="form__number form__number-color">0.0</li>
                 <li class="form__number form__number-color">2.0</li>
                 <li class="form__number form__number-color">4.0</li>
                 <li class="form__number form__number-color">6.0</li>
                 <li class="form__number form__number-color">8.0</li>
-                <li class="form__number form__number-color">10</li>
+                <li class="form__number form__number-color">10.0</li>
               </ul>
             </div>
           </form>
@@ -162,7 +166,7 @@
                 <button class="button list__button">BOOK NOW for 300$</button>
               </div>
             </a>
-            <a href="room.html" class="list__inner">
+            <a href="room.html" class="list__inner list__inner-revers">
               <div class="rooms__wrap">
                 <img src="img/rooms/Atelier.jpg" class="list__image" alt="Atelier">
                 <h5 class="rooms__caption">Atelier</h5>
@@ -202,7 +206,7 @@
                 <button class="button list__button list__button-bottom">BOOK NOW for 435$</button>
               </div>
             </a>
-            <a href="room.html" class="list__inner">
+            <a href="room.html" class="list__inner list__inner-revers">
               <div class="rooms__wrap">
                 <img src="img/rooms/Grand_Piazza_Suite.jpg" class="list__image" alt="Grand Piazza Suite">
                 <h5 class="rooms__caption">Grand Piazza Suite</h5>
@@ -225,8 +229,16 @@
           </div>
         </div>
       </section>
-      <div class="footer__black"></div>
     </main>
+    <footer class="footer">
+      <nav class="footer__navigation">
+        <a href="index.html" class="footer__link">Home</a>
+        <a href="#" class="footer__link">About Us</a>
+        <a href="#" class="footer__link">Services</a>
+        <a href="#" class="footer__link">Booking</a>
+        <a href="#" class="footer__link">Contact</a>
+      </nav>
+    </footer>
   </div>
 </body>
 

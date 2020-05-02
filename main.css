@@ -155,18 +155,8 @@
   margin-bottom: 18px;
 }
 
-.rooms__icon {
-  width: 17px;
-  height: 17px;
-}
-
 .rooms__element-font {
   letter-spacing: 1.4px;
-}
-
-.rooms__text {
-  margin-bottom: 17px;
-  letter-spacing: 0.64px;
 }
 
 .rooms__button {
@@ -188,18 +178,6 @@
 
 .rooms__wrap-bottom {
   margin-bottom: 20px;
-}
-
-.rooms__caption {
-  position: absolute;
-  left: 23px;
-  bottom: 10px;
-  text-transform: uppercase;
-  font-family: 'Roboto', sans-serif;
-  font-size: 8.5px;
-  line-height: 2.41;
-  letter-spacing: 1.3px;
-  color: #ffffff;
 }
 
 .hotel {
@@ -271,4 +249,472 @@
   line-height: 1.75;
   letter-spacing: -0.1px;
   text-align: center;
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1439px) {
+
+  .information {
+    position: relative;
+    padding: 58px 0 72px 0;
+  }
+
+  .information__subtitle {
+    margin-bottom: 15px;
+    font-size: 10px;
+    line-height: 1.85;
+    letter-spacing: 1.7px;
+  }
+
+  .information__subtitle::after {
+    margin-top: 9px;
+    width: 16px;
+  }
+
+  .information__title {
+    margin-bottom: 28px;
+    max-width: 495px;
+    font-size: 32px;
+    line-height: 1;
+  }
+
+  .information__button {
+    margin: 0 auto;
+    padding: 3px 26px;
+    max-width: 143px;
+    box-sizing: border-box;
+    font-size: 9px;
+    font-weight: 900;
+    line-height: 1.61;
+    letter-spacing: 0.9px;
+  }
+
+  .information__form {
+    position: absolute;
+    left: 284px;
+    bottom: -101px;
+    max-width: 426px;
+    width: 100%;
+    height: 83px;
+    box-sizing: border-box;
+  }
+
+  .about {
+    padding: 143px 122px 27px 220px;
+  }
+
+  .about__description {
+    max-width: 259px;
+  }
+
+  .subtitle {
+    font-size: 9px;
+    line-height: 1.61;
+    letter-spacing: 0.99px;
+  }
+
+  .about__subtitle {
+    margin-bottom: 12px;
+  }
+
+
+  .about .title {
+    font-size: 43px;
+    line-height: 1;
+  }
+
+  .about__title {
+    margin-bottom: 11px;
+  }
+
+  .about__text {
+    margin-bottom: 2px;
+    max-width: 255px;
+  }
+
+  .about__button {
+    padding: 4px 30px;
+  }
+
+  .about__image1 {
+    top: -9px;
+    right: 144px;
+    width: 232px;
+  }
+
+  .about__image2 {
+    top: 115px;
+    right: 160px;
+    width: 245px;
+  }
+
+  .about__image3 {
+    top: 11px;
+    width: 179px;
+  }
+
+  .rooms {
+    padding: 34px 0 31px 0;
+  }
+
+  .rooms__title {
+    margin-bottom: 17px;
+    font-size: 30px;
+    line-height: 1.43;
+  }
+
+  .rooms__subtitle::after {
+    margin-top: 3px;
+    width: 17px;
+  }
+
+  .rooms__content {
+    max-width: 625px;
+  }
+
+  .rooms__inner {
+    margin-right: 16px;
+    max-width: 305px;
+  }
+
+  .rooms__image-adriatic {
+    width: 305px;
+    height: 132px;
+  }
+
+  .rooms__description {
+    padding: 21px 15px 21px 17px;
+  }
+
+  .rooms__title-small {
+    margin-bottom: 11px;
+    font-size: 16px;
+    line-height: 0.68;
+    letter-spacing: 0.65px;
+  }
+
+  .rooms__part {
+    margin-bottom: 4px;
+  }
+
+  .rooms__button {
+    padding: 4px 40px 4px 20px;
+    letter-spacing: 1.6px;
+  }
+
+  .rooms__images {
+    height: 280px;
+  }
+
+  .rooms__image {
+    width: 146px;
+    height: 132px;
+  }
+
+  .rooms__wrap {
+    height: 132px;
+  }
+
+  .rooms__wrap-bottom {
+    margin-bottom: 15px;
+  }
+
+  .hotel__picture {
+    width: 257px;
+    height: 172px;
+  }
+
+  .hotel__description {
+    position: relative;
+    box-sizing: border-box;
+    padding: 46px 70px 21px 51px;
+    width: 64.6%;
+  }
+
+  .hotel .subtitle {
+    font-size: 11px;
+    line-height: 1.32;
+    letter-spacing: 0.55px;
+  }
+
+  .hotel__subtitle {
+    margin-bottom: 6px;
+  }
+
+  .hotel .title {
+    font-size: 43px;
+    line-height: 1;
+  }
+
+  .hotel__title {
+    margin-bottom: 21px;
+  }
+
+  .hotel .text {
+    font-size: 9px;
+    font-weight: 300;
+    line-height: 2.1;
+    letter-spacing: 0.6px;
+  }
+
+  .hotel__text {
+    max-width: 170px;
+  }
+
+  .hotel__text-right {
+    margin-right: 46px;
+  }
+
+  .hotel__button {
+    position: absolute;
+    padding: 4px 27px 3px 16px;
+    bottom: 39px;
+    margin-left: 12px;
+  } 
+
+  .description {
+    margin: 52px auto 44px;
+    max-width: 360px;
+    font-size: 13.5px;
+    line-height: 1.78;
+  }
+
+}
+
+@media screen and (max-width: 1023px) {
+  .information {
+    position: relative;
+    padding: 23px 0 24px 0;
+  }
+
+  .information__subtitle {
+    display: none;
+  }
+
+  .information__title {
+    margin-bottom: 14px;
+    font-size: 32px;
+    line-height: 1.41;
+  }
+
+  .information__button {
+    margin-bottom: 0;
+    padding: 20px 0;
+    max-width: 240px;
+    font-size: 18px;
+    font-weight: 900;
+    line-height: 0.5;
+    letter-spacing: 1.8px;
+  }
+
+  .information__form {
+    position: absolute;
+    top: 240px;
+    left: 25px;
+    flex-direction: column;
+    padding: 14px 58px 0 32px;
+    max-width: 526px;
+  }
+
+  
+  .about {
+    flex-direction: column;
+    padding: 321px 134px 27px 91px;
+  }
+
+  .about__description {
+    max-width: 415px;
+  }
+
+  .about .subtitle {
+    font-size: 18px;
+    line-height: 1;
+    letter-spacing: 1.98px;
+  }
+
+  .about__subtitle {
+    margin-bottom: 33px;
+  }
+
+  .about .title {
+    font-size: 36px;
+    line-height: 0.75;
+  }
+
+  .about__title {
+    margin-bottom: 27px;
+  }
+
+  .about .text {
+    font-size: 22px;
+    line-height: 1.64;
+    letter-spacing: 1.32px;
+  }
+
+  .about__text {
+    margin-bottom: 37px;
+    max-width: 415px;
+  }
+
+  .about .button {
+    font-size: 18px;
+    font-weight: 900;
+    line-height: 0.5;
+    letter-spacing: 1.8px;
+  }
+
+  .about__button {
+    padding: 25px 105px 19px 95px;
+  }
+
+  .about__images {
+    max-width: 640px;
+  }
+
+  .about__image1 {
+    top: 62px;
+    right: -4px;
+    width: 280px;
+    height: 187px;
+  }
+
+  .about__image2 {
+    width: 298px;
+    height: 198px;
+    z-index: 3;
+    top: 6px;
+    right: 208px;
+  }
+
+  .about__image3 {
+    z-index: 3;
+    top: -55px;
+    right: -135px;
+    width: 213px;
+    height: 286px;
+  }
+
+  .rooms {
+    padding: 266px 0 18px 0;
+    background-color: #ffffff;
+  }
+
+  .rooms__description {
+    display: none;
+  }
+
+  .rooms .subtitle {
+    font-size: 18px;
+    line-height: 0.5;
+    letter-spacing: 1.98px;
+  }
+
+  .rooms__subtitle {
+    margin-bottom: 18px;
+  }
+
+  .rooms__subtitle::after {
+    display: none;
+  }
+
+  .rooms__title {
+    margin-bottom: 51px;
+    font-size: 36px;
+    line-height: 0.75;
+  }
+
+  .rooms__wrap{
+    margin-bottom: 23px;
+    height: 187px;
+  }
+
+  .rooms__wrap-none{
+    display: none;
+  }
+
+  .rooms__content {
+    flex-direction: column;
+    max-width: 430px;
+  }
+
+  .rooms__image {
+    width: 428px;
+    height: 187px;
+  }
+
+  .hotel {
+    flex-direction: column;
+  }
+
+  .hotel__images {
+    justify-content: space-between;
+    max-width: 640px;
+    background-color: #000000;
+    border: solid 2px #000000;
+  }
+
+  .hotel__picture {
+    width: 158px;
+    height: 105px;
+  }
+
+  .hotel__description {
+    padding: 36px 88px 36px 75px;
+    max-width: 640px;
+    text-align: center;
+  } 
+
+  .hotel .subtitle {
+    font-size: 18px;
+    line-height: 0.5;
+    letter-spacing: 0.9px;
+  }
+
+  .hotel__subtitle {
+    margin-bottom: 30px;
+  }
+
+  .hotel__title {
+    margin: 0 auto 32px;
+    font-size: 32px;
+    line-height: 0.84;
+    letter-spacing: -0.2px;
+  }
+
+  .hotel__content {
+    flex-direction: column;
+    margin-bottom: 50px;
+  }
+
+  .hotel .text {
+    font-size: 22px;
+    font-weight: 300;
+    line-height: 1.64;
+    letter-spacing: 1.32px;
+  }
+
+  .hotel__text {
+    max-width: 476px;
+  }
+
+  .hotel__text-right {
+    margin-right: 0;
+  }
+
+  .hotel .button {
+    font-size: 18px;
+    font-weight: 900;
+    line-height: 0.5;
+    letter-spacing: 1.8px;
+  }
+
+  .hotel__button {
+    padding: 25px 52px;
+  }
+
+  .description {
+    margin: 17px auto 13px 128px;
+    max-width: 427px;
+    font-size: 16px;
+    line-height: 1.63;
+  }
 }

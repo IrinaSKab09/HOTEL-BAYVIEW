@@ -53,6 +53,7 @@
   justify-content: space-between;
   padding-left: 284px;
   max-width: 878px;
+  width: 100%;
 }
 
 .apartment__description {
@@ -268,4 +269,392 @@
   .room__navigation {
     max-width: 577px;
   }
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1439px) {
+  .room {
+    padding-top: 120px;
+    padding-bottom: 11px;
+    padding-left: 202px;
+    padding-right: 244px;
+  }
+
+  .room__navigation {
+    width: 72.5%;
+  }
+
+  .room__price {
+    font-size: 27px;
+    line-height: 0.7;
+  }
+
+  .room__price-small {
+    font-size: 9px;
+    line-height: 2.5;
+    letter-spacing: 0.87px;
+  }
+
+  .apartment__title {
+    max-width: 625px;
+    font-size: 21.5px;
+    line-height: 0.53;
+  }
+
+  .apartment {
+    padding-top: 24px;
+    padding-bottom: 57px;
+  }
+
+  .apartment__subtitle {
+    margin-bottom: 12px;
+    max-width: 625px;
+    letter-spacing: 0.22px;
+  }
+
+  .apartment__container {
+    padding-left: 200px;
+    width: 60.8%;
+  }
+
+  .apartment__description {
+    max-width: 411px;
+  }
+
+  .apartment__image {
+    margin-bottom: 22px;
+    width: 411px;
+    height: 200px;
+  }
+
+  .apartment__name {
+    top: 171px;
+    left: 15px;
+  }
+
+  .apartment__number {
+    padding: 2px 4px;
+    font-size: 8px;
+    line-height: 1.81;
+    letter-spacing: 0.32px;
+  }
+
+  .apartment__review {
+    font-size: 9px;
+    line-height: 1.61;
+    letter-spacing: 2px;
+  }
+
+  .apartment__wrap {
+    margin-bottom: 35px;
+    padding: 0;
+  }
+
+  .apartment__wrap::after {
+    top: 60px;
+    width: 411px;
+  }
+
+  .apartment__icon {
+    margin-bottom: 5px;
+    width: 21px;
+    height: 21px;
+  }
+  .apartment__item {
+    font-size: 9px;
+    line-height: 1.61;
+    letter-spacing: 0.54px;
+  }
+
+  .apartment__text {
+    margin-bottom: 10px;
+    max-width: 400px;
+    letter-spacing: 0.58px;
+    line-height: 2.05;
+    text-align: left;
+  }
+
+  .apartment__text::after {
+    display: none;
+  }
+
+  .apartment__title-small {
+    margin-bottom: 12px;
+    font-size: 14px;
+    line-height: 0.82;
+    letter-spacing: 0.56px;
+  }
+
+  .apartment__grid {
+    grid-template-columns: 110px 110px 110px;
+    grid-column-gap: 27.5px;
+    grid-row-gap: 8px;
+  }
+
+  .apartment__grid-icon {
+    margin-right: 4px;
+    width: 14px;
+    height: 12px;
+  }
+
+  .apartment__grid-caption {
+    font-size: 9px;
+    line-height: 1.61;
+    letter-spacing: 0.54px;
+  }
+
+  .reservation {
+    padding: 16px 16px 15px;
+    max-width: 167px;
+    min-height: 168px;
+  } 
+
+  .reservation__guest {
+    margin-bottom: 14px;
+    padding: 11px 40px;
+    font-size: 11px;
+    line-height: 1.32;
+    letter-spacing: -0.44px;
+  }
+
+  .reservation__part {
+    margin-bottom: 10px;
+  }
+
+  .reservation__date {
+    padding: 4px 0 8px;
+    width: 45%;
+  }
+
+  .reservation__word {
+    margin-bottom: 9px;
+    font-size: 8px;
+    line-height: 1.81;
+    letter-spacing: 0.64px;
+  }
+
+  .reservation__number {
+    margin-bottom: 6px;
+    font-size: 27px;
+    line-height: 0.54;
+    letter-spacing: 1.2px;
+  }
+
+  .reservation__month {
+    margin-bottom: 0;
+    font-size: 8px;
+    line-height: 1.81;
+    letter-spacing: -0.48px;
+  }
+
+  .reservation__weekday {
+    font-size: 8px;
+    line-height: 1.81;
+    letter-spacing: 0.64px;
+  } 
+
+  .reservation__button {
+    padding: 3px 0;
+  }
+
+  .footer {
+    padding: 15px 0 0 195px;
+    height: 33px;
+  }
+
+  .footer__navigation {
+    width: 405px;
+    font-size: 11px;
+    line-height: 1.32;
+    letter-spacing: 1px;
+  }
+
+}
+
+@media screen and (max-width: 1023px) {
+  .room {
+    padding: 0;
+    height: 205px;
+  }
+
+  .room__menu {
+    display: none;
+  }
+
+  .apartment {
+    position: relative;
+    padding-bottom: 33px;
+  }
+
+  .apartment__title-top {
+    position: absolute;
+    top: -115px;
+    left: 130px;
+    max-width: 500px;
+    font-size: 48px;
+    line-height: 0.63;
+    letter-spacing: -0.4px;
+    color: #ffffff;
+    text-transform: uppercase;
+  } 
+
+  .apartment__subtitle {
+    display: none;
+  }
+
+  .apartment__container {
+    flex-direction: column-reverse;
+    padding-left: 54px;
+    max-width: 559px;
+    width: 100%;
+  }
+
+  .apartment__description {
+    max-width: 559px;
+  }
+
+  .apartment__image {
+    margin-bottom: 24px;
+    width: 523px;
+    height: 227px;
+  }
+
+  .apartment__name {
+    top: 201px;
+    left: 21px;
+  }
+
+  .apartment__wrap {
+    justify-content: start;
+    margin-bottom: 34px;
+    padding: 0 0 0 15px;
+  }
+
+  .apartment__wrap::after {
+    display: none;
+}
+
+  .apartment__part-right {
+    margin-right: 35px;
+  }
+
+  .apartment__part-big {
+    margin-right: 10px;
+    width: 147px;
+  }
+
+  .apartment__icon {
+    margin-bottom: 13px;
+    width: 42px;
+    height: 41px;
+  }
+
+  .apartment__item {
+    font-size: 16px;
+    line-height: 0.91;
+    letter-spacing: 0.96px;
+  }
+
+  .apartment .text {
+    font-size: 18px;
+    line-height: 1.56;
+    letter-spacing: 1.14px;
+    text-align: left;
+  }
+
+  .apartment__text {
+    margin-bottom: 39px;
+  }
+
+  .apartment__title-small {
+    margin-bottom: 33px;
+    font-size: 22px;
+    line-height: 0.52;
+    letter-spacing: 0.88px;
+  }
+
+  .apartment__grid {
+    grid-template-columns: 155px 155px 155px;
+    grid-column-gap: 23px;
+  }
+
+  .apartment__grid-icon {
+    margin-right: 7px;
+    width: 24px;
+    height: 25px;
+  }
+
+  .apartment__grid-caption {
+    font-size: 16px;
+    line-height: 0.91;
+    letter-spacing: 0.96px;
+  }
+
+  .reservation {
+    margin-bottom: 68px;
+    padding: 28px 32px 34px 29px;
+    max-width: 462px;
+    width: 100%;
+  }
+
+  .reservation__guest {
+    margin-bottom: 22px;
+    padding: 24px 30px;
+    font-size: 16px;
+    line-height: 0.56;
+    letter-spacing: 1.3px;
+  }
+
+  .reservation__part {
+    margin: 0 79px 24px 73px;
+  }
+
+  .reservation__date {
+    padding: 22px 0 21px;
+    max-width: 126px;
+  }
+
+  .reservation__word {
+    margin-bottom: 19px;
+    font-size: 14px;
+    line-height: 0.64;
+    letter-spacing: 1.12px;
+  }
+
+  .reservation__month {
+    margin-bottom: 14px;
+    font-size: 14px;
+    line-height: 0.64;
+    letter-spacing: -0.84px;
+  }
+
+  .reservation__weekday {
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 0.64;
+    letter-spacing: 0.2px;
+  }
+
+  .reservation .button {
+    font-size: 22px;
+    line-height: 0.3;
+    letter-spacing: 1.5px;
+  }
+
+  .reservation__button {
+    padding: 22px 30px;
+    max-width: 460px;
+  }
+
+  .footer {
+    padding: 16px 0 0 59px;
+    height: 28px;
+  }
+
+  .footer__navigation {
+    width: 407px;
+    font-size: 11px;
+    line-height: 1.32;
+    letter-spacing: 1.7px;
+  }
+
 }
