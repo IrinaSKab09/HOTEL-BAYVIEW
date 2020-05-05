@@ -1,10 +1,24 @@
 .room {
+  position: relative;
   padding-top: 235px;
   padding-bottom: 22px;
   padding-left: 284px;
   padding-right: 348px;
-  background-image: url(img/room-background.jpg);
+  background-image: url(img/room-background-min.jpg);
   background-position: left 0 bottom 0;
+  background-size: cover;
+}
+
+.room::after {
+	content:'';
+  background-image: linear-gradient(to top, rgba(28, 28, 28, 0.2), rgba(28, 28, 28, 0.2));
+	display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+	width: 100%;
+  height: 100%;
+  opacity: 0.7;
 }
 
 .room__menu {
@@ -13,12 +27,19 @@
 }
 
 .room__navigation {
+  position: relative;
   max-width: 477px;
   width: 100%;
   padding-top: 6px;
   font-size: 9px;
   line-height: 2.28;
   letter-spacing: 1.35px;
+  z-index: 1;
+}
+
+.room__value {
+  position: relative;
+  z-index: 1;
 }
 
 .room__price {
@@ -40,6 +61,10 @@
 
 .navigation__link-light {
   color: #ffffff;
+}
+
+.navigation__link-light:hover {
+  color: #3d3838;
 }
 
 .apartment {
@@ -263,6 +288,13 @@
   width: 100%;
   background-color: #c19b76;
   border: solid 1.5px #c19b76;
+}
+
+.reservation__button:hover {
+  text-shadow: 0px 0px 6px rgba(255, 255, 255, 1);
+  background-color: #bf6652;
+  border: solid 1.5px #bf6652;
+  transition: all 0.5s ease-in;
 }
 
 @media (min-width: 1680px) {

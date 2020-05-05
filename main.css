@@ -1,12 +1,26 @@
 .information {
+  position: relative;
   padding: 73px 0 62px 0;
-  background-image: url("img/background.jpg");
+  background: url("img/background.png");
+  background-size: cover;
   background-repeat: no-repeat;
   background-position: left 0 bottom 0;
   text-align: center;
 }
 
+.information::after {
+	content:'';
+  background-image: linear-gradient(to top, rgba(28, 28, 28, 0.2), rgba(28, 28, 28, 0.2));
+	display: block;
+  position: absolute;
+  top: 0;
+	width: 100%;
+  height: 100%;
+  opacity: 0.7;
+}
+
 .information__title {
+  position: relative;
   margin: auto;
   margin-bottom: 31px;
   max-width: 460px;
@@ -14,15 +28,18 @@
   font-size: 52.5px;
   line-height: 1.28;
   color: #ffffff;
+  z-index: 1;
 }
 
 .information__subtitle {
+  position: relative;
   margin-bottom: 14px;
   font-family: 'Roboto', sans-serif;
   font-size: 9px;
   line-height: 2.28;
   letter-spacing: 1.6px;
   color: #ffffff;
+  z-index: 1;
 }
 
 .information__subtitle::after {
@@ -36,17 +53,27 @@
 }
 
 .information__button {
+  position: relative;
+  position: relative;
   display: block;
   margin: 0 auto 94px;
   padding: 5px 26px;
   max-width: 89px;
+  z-index: 1;
+}
+
+.information__button:hover {
+  box-shadow: 0 0 8px 0 #f7ebe9 inset, 0 0 8px 3px #f7ebe9;
+  transition: box-shadow 0.3s ease-in;
 }
 
 .information__form {
+  position: relative;
   display: flex;
   margin: 0 auto;
   max-width: 539px;
   width: 100%;
+  z-index: 1;
 }
 
 .about {
@@ -78,6 +105,14 @@
   background-color: #c19b76;
   padding: 5px 24px;
   border: solid 1.5px #c19b76;
+}
+
+.about__button:hover {
+  background-color: #8a321e;
+  border: solid 1.5px #8a321e;
+  box-shadow: 0 15px 20px #8a321e;
+  transform: translateY(-5px);
+  transition: transform 0.2s ease-in;
 }
 
 .about__images {
@@ -165,6 +200,13 @@
   border: solid 1.5px #1c1c1c;
 }
 
+.rooms__button:hover {
+  text-shadow: 0px 0px 6px rgba(255, 255, 255, 1);
+  background-color: #403d3d;
+  border: solid 1.5px #403d3d;
+  transition: all 0.5s ease-in;
+}
+
 .rooms__images {
   display: flex;
   justify-content: space-between;
@@ -240,6 +282,14 @@
   background-color: #151515;
   border: solid 1.5px #151515;
 }
+
+.hotel__button:hover {
+  text-shadow: 0px 0px 6px rgba(255, 255, 255, 1);
+  background-color: #403d3d;
+  border: solid 1.5px #403d3d;
+  transition: all 0.5s ease-in;
+}
+
 
 .description {
   margin: 50px auto 40px;
@@ -483,7 +533,7 @@
 @media screen and (max-width: 1023px) {
   .information {
     position: relative;
-    padding: 23px 0 24px 0;
+    padding: 55px 0 24px 0;
   }
 
   .information__subtitle {
