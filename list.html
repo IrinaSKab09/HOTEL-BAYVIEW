@@ -13,136 +13,139 @@
 </head>
 
 <body>
-  <div class="container">
-    <header class="header">
-      <div class="header__container">
-        <a href="index.html"><img src="img/icons/logo.svg" alt="logo" class="header__logo"></a>
-        <nav class="navigation">
-          <a href="index.html" class="navigition__link">Home</a>
-          <a href="list.html" class="navigition__link">Rooms</a>
-          <a href="room.html" class="navigition__link">Single Room</a>
-          <a href="#" class="navigition__link">Booking</a>
-          <a href="#" class="navigition__link">Our News</a>
-          <a href="#" class="navigition__link">Contact</a>
-        </nav>
-      </div>
-    </header>
-    <main>
-      <div class="search">
-        <h1 class="title search__title">SEARCH</h1>
-      </div>
-      <section class="list">
-        <div class="list__content">
-          <form class="form list__form">
-            <div class="form__inner">
-              <h2 class="form__title">All Branches</h2>
-              <div class="form__wrap">
-                <div class="form__input-group form__input-group-bottom form__input-group-width">
-                  <label for="date-in" class="form__label form__label-light">CHECK-IN</label>
-                  <div class="form__part">
-                    <input type="text" autocomplete="off" class="form__input form__input-black" id="date-in"
-                      placeholder="26">
-                    <select size="1" class="form__select form__select-black">
-                      <option value="">Jan</option>
-                      <option value="">Feb</option>
-                      <option value="">Mar</option>
-                      <option value="">Apr</option>
-                      <option value="">May</option>
-                      <option selected value="">Jun</option>
-                      <option value="">Jul</option>
-                      <option value="">Aug</option>
-                      <option value="">Sep</option>
-                      <option value="">Oct</option>
-                      <option value="">Nov</option>
-                      <option value="">Dec</option>
-                    </select>
-                  </div>
-                </div>
-                <div class="form__input-group form__input-group-bottom form__input-group-width">
-                  <label for="date-out" class="form__label form__label-light">CHECK-OUT</label>
-                  <div class="form__part">
-                    <input type="text" autocomplete="off" class="form__input form__input-black" id="date-out"
-                      placeholder="28">
-                    <select size="1" class="form__select form__select-right form__select-black">
-                      <option value="">Jan</option>
-                      <option value="">Feb</option>
-                      <option value="">Mar</option>
-                      <option value="">Apr</option>
-                      <option value="">May</option>
-                      <option selected value="">Jun</option>
-                      <option value="">Jul</option>
-                      <option value="">Aug</option>
-                      <option value="">Sep</option>
-                      <option value="">Oct</option>
-                      <option value="">Nov</option>
-                      <option value="">Dec</option>
-                    </select>
-                  </div>
-                </div>
-                <div class="form__input-group form__input-group-width">
-                  <label for="guests" class="form__label form__label-light">GUESTS</label>
-                  <input type="text" autocomplete="off" class="form__input form__input-black form__input-left"
-                    id="guests" placeholder="1">
-                </div>
-                <div class="form__input-group form__input-group-width">
-                  <label for="nights" class="form__label form__label-light">NIGHTS</label>
-                  <input type="text" autocomplete="off" class="form__input form__input-black form__input-left"
-                    id="nights" placeholder="2">
+  <header class="header">
+    <div class="header__container">
+      <a href="index.html"><img src="img/icons/logo.svg" alt="logo" class="header__logo"></a>
+      <nav class="navigation">
+        <a href="index.html" class="navigition__link">Home</a>
+        <a href="list.html" class="navigition__link">Rooms</a>
+        <a href="room.html" class="navigition__link">Single Room</a>
+        <a href="#" class="navigition__link">Booking</a>
+        <a href="#" class="navigition__link">Our News</a>
+        <a href="#" class="navigition__link">Contact</a>
+      </nav>
+    </div>
+    <div class="navigation__mobil"></div>
+  </header>
+  <main>
+    <div class="search" data-speed="10" data-type="background">
+      <h1 class="title search__title">SEARCH</h1>
+    </div>
+    <section class="list">
+      <div class="list__content">
+        <form class="form list__form">
+          <div class="form__inner">
+            <h2 class="form__title">All Branches</h2>
+            <div class="form__wrap">
+              <div class="form__input-group form__input-group-bottom form__input-group-width">
+                <label for="date-in" class="form__label form__label-light">CHECK-IN</label>
+                <div class="form__part">
+                  <input type="text" autocomplete="off" class="form__input form__input-black" id="date-in"
+                    placeholder="26">
+                  <select size="1" class="form__select form__select-black">
+                    <option value="">Jan</option>
+                    <option value="">Feb</option>
+                    <option value="">Mar</option>
+                    <option value="">Apr</option>
+                    <option value="">May</option>
+                    <option selected value="">Jun</option>
+                    <option value="">Jul</option>
+                    <option value="">Aug</option>
+                    <option value="">Sep</option>
+                    <option value="">Oct</option>
+                    <option value="">Nov</option>
+                    <option value="">Dec</option>
+                  </select>
                 </div>
               </div>
-            </div>
-            <div class="form__services">
-              <h2 class="form__title form__title-grey">Services</h2>
-              <div class="form__option">
-                <ul class="form__element">
-                  <li class="form__item">
-                    <input type="checkbox" class="form__checkbox" id="Animal">
-                    <label for="Animal" class="text">Animal Allowed</label>
-                  </li>
-                  <li class="form__item">
-                    <input type="checkbox" class="form__checkbox" id="Smooking">
-                    <label for="Smooking" class="text">Smooking Room</label>
-                  </li>
-                  <li class="form__item">
-                    <input type="checkbox" class="form__checkbox" id="Sea">
-                    <label for="Sea" class="text">Sea View</label>
-                  </li>
-                </ul>
-                <ul class="form__element">
-                  <li class="form__item">
-                    <input type="checkbox" class="form__checkbox" id="Swimming">
-                    <label for="Swimming" class="text">Swimming Pool</label>
-                  </li>
-                  <li class="form__item">
-                    <input type="checkbox" class="form__checkbox" id="Wifi">
-                    <label for="Wifi" class="text">Wifi 24 H</label>
-                  </li>
-                  <li class="form__item">
-                    <input type="checkbox" class="form__checkbox" id="Breakfast">
-                    <label for="Breakfast" class="text">Breakfast Included</label>
-                  </li>
-                </ul>
+              <div class="form__input-group form__input-group-bottom form__input-group-width">
+                <label for="date-out" class="form__label form__label-light">CHECK-OUT</label>
+                <div class="form__part">
+                  <input type="text" autocomplete="off" class="form__input form__input-black" id="date-out"
+                    placeholder="28">
+                  <select size="1" class="form__select form__select-right form__select-black">
+                    <option value="">Jan</option>
+                    <option value="">Feb</option>
+                    <option value="">Mar</option>
+                    <option value="">Apr</option>
+                    <option value="">May</option>
+                    <option selected value="">Jun</option>
+                    <option value="">Jul</option>
+                    <option value="">Aug</option>
+                    <option value="">Sep</option>
+                    <option value="">Oct</option>
+                    <option value="">Nov</option>
+                    <option value="">Dec</option>
+                  </select>
+                </div>
+              </div>
+              <div class="form__input-group form__input-group-width">
+                <label for="guests" class="form__label form__label-light">GUESTS</label>
+                <input type="text" autocomplete="off" class="form__input form__input-black form__input-left" id="guests"
+                  placeholder="1">
+              </div>
+              <div class="form__input-group form__input-group-width">
+                <label for="nights" class="form__label form__label-light">NIGHTS</label>
+                <input type="text" autocomplete="off" class="form__input form__input-black form__input-left" id="nights"
+                  placeholder="2">
               </div>
             </div>
-            <div class="form__size">
-              <h2 class="form__title form__title-grey form__title-bottom">Room Size</h2>
-                <div class="form__size-input">
-                  <input type="text" class="form__input-black form__input-light form__input-big" placeholder="0.0">-<input type="text" class="form__input-black form__input-light form__input-big" placeholder="0.0">
-                  <span class="form__letter">M2</span>
-                </div>
-            </div>
-            <div class="form__reviews">
-              <h2 class="form__title form__title-grey form__title-bottom">Reviews</h2>
-              <ul class="form__numbers">
-                <li class="form__number form__number-color">0.0</li>
-                <li class="form__number form__number-color">2.0</li>
-                <li class="form__number form__number-color">4.0</li>
-                <li class="form__number form__number-color">6.0</li>
-                <li class="form__number form__number-color">8.0</li>
-                <li class="form__number form__number-color">10.0</li>
+          </div>
+          <div class="form__services">
+            <h2 class="form__title form__title-grey">Services</h2>
+            <div class="form__option">
+              <ul class="form__element">
+                <li class="form__item">
+                  <input type="checkbox" class="form__checkbox" id="Animal">
+                  <label for="Animal" class="text">Animal Allowed</label>
+                </li>
+                <li class="form__item">
+                  <input type="checkbox" class="form__checkbox" id="Smooking">
+                  <label for="Smooking" class="text">Smooking Room</label>
+                </li>
+                <li class="form__item">
+                  <input type="checkbox" class="form__checkbox" id="Sea">
+                  <label for="Sea" class="text">Sea View</label>
+                </li>
+              </ul>
+              <ul class="form__element">
+                <li class="form__item">
+                  <input type="checkbox" class="form__checkbox" id="Swimming">
+                  <label for="Swimming" class="text">Swimming Pool</label>
+                </li>
+                <li class="form__item">
+                  <input type="checkbox" class="form__checkbox" id="Wifi">
+                  <label for="Wifi" class="text">Wifi 24 H</label>
+                </li>
+                <li class="form__item">
+                  <input type="checkbox" class="form__checkbox" id="Breakfast">
+                  <label for="Breakfast" class="text">Breakfast Included</label>
+                </li>
               </ul>
             </div>
-          </form>
+          </div>
+          <div class="form__size">
+            <h2 class="form__title form__title-grey form__title-bottom">Room Size</h2>
+            <div class="form__size-input">
+              <input type="text" class="form__input  form__input-small" placeholder="0.0">-<input type="text"
+                class="form__input form__input-small form__input-left" placeholder="0.0">
+              <span class="form__letter">M2</span>
+            </div>
+          </div>
+          <div class="form__reviews">
+            <h2 class="form__title form__title-grey form__title-bottom">Reviews</h2>
+            <ul class="form__numbers">
+              <li class="form__number form__number-color">0.0</li>
+              <li class="form__number form__number-color">2.0</li>
+              <li class="form__number form__number-color">4.0</li>
+              <li class="form__number form__number-color">6.0</li>
+              <li class="form__number form__number-color">8.0</li>
+              <li class="form__number form__number-color">10.0</li>
+            </ul>
+          </div>
+        </form>
+        <div class="rooms__description">
+          <h2 class="rooms__title">List</h2>
           <div class="rooms__images">
             <a href="room.html" class="list__inner">
               <div class="rooms__wrap">
@@ -169,7 +172,7 @@
                 <img src="img/rooms/Atelier-min.jpg" class="list__image" alt="Atelier">
                 <h5 class="rooms__caption">Atelier</h5>
               </div>
-              <div class="list__description">
+              <div class="list__description list__description-reverse">
                 <h5 class="rooms__title-small">Atelier</h5>
                 <div class="rooms__part rooms__part-bottom">
                   <span class="rooms__item">8.5</span>
@@ -209,7 +212,7 @@
                 <img src="img/rooms/Grand_Piazza_Suite-min.jpg" class="list__image" alt="Grand Piazza Suite">
                 <h5 class="rooms__caption">Grand Piazza Suite</h5>
               </div>
-              <div class="list__description">
+              <div class="list__description list__description-reverse">
                 <h5 class="rooms__title-small">Grand Piazza Suite</h5>
                 <div class="rooms__part rooms__part-bottom">
                   <span class="rooms__item">9.8</span>
@@ -226,18 +229,19 @@
             </a>
           </div>
         </div>
-      </section>
-    </main>
-    <footer class="footer">
-      <nav class="footer__navigation">
-        <a href="index.html" class="footer__link">Home</a>
-        <a href="#" class="footer__link">About Us</a>
-        <a href="#" class="footer__link">Services</a>
-        <a href="#" class="footer__link">Booking</a>
-        <a href="#" class="footer__link">Contact</a>
-      </nav>
-    </footer>
-  </div>
+      </div>
+    </section>
+  </main>
+  <footer class="footer">
+    <nav class="footer__navigation">
+      <a href="index.html" class="footer__link">Home</a>
+      <a href="#" class="footer__link">About Us</a>
+      <a href="#" class="footer__link">Services</a>
+      <a href="#" class="footer__link">Booking</a>
+      <a href="#" class="footer__link">Contact</a>
+    </nav>
+  </footer>
+  <script src="script.js"></script>
 </body>
 
 </html>

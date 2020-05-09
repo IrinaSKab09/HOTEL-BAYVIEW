@@ -1,9 +1,8 @@
 .search {
   position: relative;
-  padding: 96px 0 127px 0;
-  background-image: url(img/list-bc-min.jpg);
+  padding: 145px 0 127px 0;
+  background: url("img/list-bc-min.jpg") fixed;
   background-size: cover;
-  background-position: left 0 bottom 0;
 }
 
 .search::after {
@@ -34,6 +33,7 @@
 
 .list__content {
   display: flex;
+  justify-content: space-between;
   margin: 0 auto;
   max-width: 880px;
 }
@@ -55,6 +55,11 @@
   border: solid 0.8px #f1f1f1;
 }
 
+.list__description .rooms__text {
+  margin-bottom: 16px;
+  letter-spacing: 0.62px;
+}
+
 .list__button {
   margin-bottom: 24px;
   padding: 5px 45px 5px 22px;
@@ -67,15 +72,12 @@
   transition: box-shadow 0.2s ease-in;
 }
 
-
 .list__button-bottom {
   margin-bottom: 29px;
 }
 
 .list__form {
-  margin-right: 20px;
-  max-width: 279px;
-  width: 100%;
+  width: 31.6%;
 }
 
 .form__inner {
@@ -117,7 +119,7 @@
 }
 
 .form__input-left {
-  padding-left: 30px;
+  padding-left: 10px;
 }
 
 .form__label-light {
@@ -130,6 +132,7 @@
 
 .form__input-black {
   margin-right: 3px;
+  margin-left: 3px;
   width: 50px;
   background-color: #151515;
   border: solid 0.8px #151515;
@@ -151,9 +154,29 @@
   color: #ffffff;
 }
 
-.form__input-big {
-  width: 40px
+.form__input-small {
+  margin-right: 8px;
+  padding-left: 10px;
+  width: 39px;
+  height: 20px;
+  background-color: #000000;
+  border: solid 0.8px #151515;
+  color: #ffffff;
+  font-family: 'Roboto', sans-serif;
+  font-size: 10px;
+  line-height: 1.81;
+  letter-spacing: -0.16px;
+  text-align: left;
 }
+
+.form__input-left {
+  margin-left: 8px;
+}
+
+.form__input-small::placeholder {
+  color: #ffffff;
+}
+
 
 .form__select-black {
   padding-top: 11px;
@@ -285,8 +308,8 @@
   color: #878787;
 }
 
-.list__images {
-  max-width: 582px;
+.rooms__description {
+  width: 66%;
 }
 
 .rooms__wrap-bottom {
@@ -294,7 +317,7 @@
 }
 
 .rooms__part-bottom {
-  margin-bottom: 14px;
+  margin-bottom: 13px;
 }
 
 .rooms__item-size {
@@ -333,9 +356,13 @@
   flex-wrap: wrap;
 }
 
+.rooms__title {
+  display: none;
+}
+
 @media screen and (min-width: 1024px) and (max-width: 1439px) {
   .search {
-    padding: 54px 0 42px 0;
+    padding: 89px 0 42px 0;
   }
 
   .search__title {
@@ -344,16 +371,16 @@
   }
 
   .list {
-    padding: 33px 0 92px 0;
+    padding: 33px 0 94px 0;
   }
 
   .list__content {
-    margin: 0 190px 0 201px;
+    max-width: 644px;
   }
 
   .list__form {
-    margin-right: 13px;
-    max-width: 209px;
+    margin-left: 10px;
+    width: 33%;
   }
 
   .list__inner {
@@ -372,7 +399,7 @@
   }
 
   .form__wrap {
-    padding: 0 27px 0 10px;
+    padding: 0 17px 0 10px;
   }
 
   .form__title {
@@ -385,7 +412,7 @@
   .form__label {
     font-size: 9px;
     line-height: 1.61;
-    letter-spacing: 0.72px;
+    letter-spacing: 1.5px;
   }
 
   .form__input {
@@ -393,9 +420,23 @@
     line-height: 0.54;
     letter-spacing: -1.62px;
   }
+  
+  .form__input-small {
+    margin-right: 3px;
+    width: 27px;
+    height: 13px;
+    font-size: 8px;
+    line-height: 1.81;
+    letter-spacing: -0.16px;
+  }
+
+  .form__input-left {
+    margin-left: 3px;
+    padding-left: 18px;
+  }
 
   .form__input-group-width {
-    max-width: 80px;
+    max-width: 85px;
   }
 
   .form__input-group-bottom {
@@ -403,15 +444,19 @@
   }
 
   .form__input-black {
-    width: 33px;
+    width: 27px;
   }
 
-  .form__input-left {
-    padding-left: 20px;
+  .form__input-light {
+    line-height: 1.4;
   }
 
   .form__label {
     margin-bottom: 0;
+  }
+
+  .form__letter {
+    font-size: 6px;
   }
 
   .form__services {
@@ -419,25 +464,28 @@
   }
 
   .form__services::after {
-    margin-top: 4px;
+    margin-top: 19px;
     width: 199px;
   }
 
   .form__title-grey {
-    margin-bottom: 7px;
+    margin-bottom: 2px;
   }
 
   .form__option {
-    padding: 0;
+    padding: 0 9px 0 0;
   }
 
   .form__checkbox + .text::before {
+    margin-right: 7px;
     height: 8px;
     width: 8px;
+    font-size: 8px;
+    line-height: 8px;
   }
 
   .form__size {
-    padding-top: 21px;
+    padding-top: 11px;
   }
 
   .form__size::after {
@@ -455,7 +503,7 @@
   }
 
   .form__reviews {
-    padding-top: 6px;
+    padding-top: 8px;
   }
 
   .form__number {
@@ -491,13 +539,22 @@
 
   .list__description .text {
     line-height: 2;
+    letter-spacing: -0.01px;
+  }
+
+  .list__description .rooms__text {
+    margin-bottom: 11px;
   }
 
   .list__button {
     margin-bottom: 24px;
-    padding: 3px 27px 2px 38px;
-    width: 166px;
+    padding: 3px 35px 2px 35px;
+    width: 165px;
     line-height: 1.5;
+  }
+
+  .rooms__description {
+    width: 63.5%
   }
 
   .rooms__title-small {
@@ -520,10 +577,11 @@
 
 }
 
+
 @media screen and (max-width: 1023px) {
 
   .search {
-    padding: 86px 0 89px 0;
+    padding: 117px 0 89px 0;
   }
 
   .search__title {
@@ -534,7 +592,7 @@
 
   .list {
     margin: 0 auto;
-    padding: 32px 0 18px 0;
+    padding: 32px 0 14px 0;
   }
 
   .list__content {
@@ -543,8 +601,7 @@
   }
 
   .list__form {
-    margin-right: 0;
-    max-width: 527px;
+    width: 100%;
   }
 
   .form__inner {
@@ -558,11 +615,14 @@
   }
 
   .form__title {
-    margin-bottom: 24px;
     font-size: 22px;
     line-height: 0.41;
     letter-spacing: 0.4px;
     text-align: center;
+  }
+
+  .form__inner .form__title {
+    margin-bottom: 26px;
   }
 
   .form__label {
@@ -614,7 +674,7 @@
   }
 
   .form__services .form__title-grey {
-    margin-bottom: 30px;
+    margin-bottom: 25px;
   }
 
   .form__item {
@@ -633,20 +693,12 @@
   }
 
   .form__size {
-    padding-top: 30px;
+    padding-top: 32px;
   }
 
-  /* .form__number-big {
-    margin-left: 4px;
-    margin-right: 11px;
-    padding: 3px 18px 0 7px;
-    background-color: #1c1c1c;
-    font-family: 'Roboto', sans-serif;
-    font-size: 9.5px;
-    line-height: 2.16;
-    letter-spacing: -0.19px;
-    color: #ffffff;
-  } */
+  .form__size .form__title-bottom {
+    margin-bottom: 20px;
+  }
 
   .form__size::after {
     display: none;
@@ -659,17 +711,31 @@
     max-width: 210px;
   }
 
-  .form__input-big {
+  .form__input-small {
+    box-sizing: border-box;
+    padding-right: 10px;
     width: 67px;
-    height: 25px;
+    height: 28px;
+  }
+
+  .form__input-light {
+    font-size: 14px;
+    line-height: 0.64;
+    letter-spacing: -0.28px;
+    text-align: right;
+  }
+
+  .form__letter {
+    display: none;
   }
 
   .form__reviews {
-    padding-top: 45px;
+    padding-top: 52px;
   }
 
   .form__reviews .form__title-bottom {
-    margin-bottom: 49px;
+    margin-bottom: 47px;
+    letter-spacing: 1.2px;
   }
 
   .form__numbers {
@@ -688,9 +754,23 @@
     letter-spacing: -0.28px;
   }
 
-  .rooms__images {
-    padding-top: 56px;
+  .rooms__description {
+    padding-top: 32px;
+  }
+
+  .rooms__title {
+    display: block;
+    margin-bottom: 16px;
+    font-family: 'Gilda Display', serif;
+    font-size: 22px;
+    line-height: 0.41;
+    letter-spacing: 1.32px;
+    text-align: center;
+  }
+
+  .rooms__description {
     padding-left: 15px;
+    width: 100%;
   }
 
   .rooms__part {
@@ -699,15 +779,18 @@
 
   .list__inner {
     display: flex;
-    padding: 17px;
-    margin-bottom: 21px;
-    max-width: 468px;
-    height: 131px;
+    box-sizing: border-box;
+    padding: 17px 20px 17px 15px;
+    margin-bottom: 18px;
+    max-width: 503px;
+    height: 168px;
     border: solid 1px #a3a3a3;
   }
 
   .list__inner-revers {
     flex-direction: row-reverse;
+    margin-bottom: 24px;
+    padding: 17px 13px;
   }
 
   .rooms__wrap {
@@ -724,6 +807,26 @@
     border: none;
   }
 
+  .list__description-reverse {
+    padding-left: 0;
+    padding-top: 7px;
+    padding-right: 30px;
+  }
+
+  .list__description .rooms__text {
+    margin-bottom: 8px;
+    letter-spacing: 0.93px;
+  }
+
+  .list__description .button {
+    line-height: 1;
+    letter-spacing: 1.9px;
+  }
+
+  .list__button {
+    padding: 8px 16px 7px 14px;
+  }
+
   .rooms__title-small {
     font-size: 22px;
     line-height: 0.7;
@@ -736,16 +839,11 @@
   }
 
   .rooms__caption {
-    left: 13px;
+    left: 14px;
     bottom: 17px;
     font-size: 14px;
     line-height: 0.64;
-    letter-spacing: 1.4px;
-  }
-
-  .list__button {
-    margin-bottom: 10px;
-    padding: 2px 25px 1px 11px;
+    letter-spacing: 2.5px;
   }
 
 }

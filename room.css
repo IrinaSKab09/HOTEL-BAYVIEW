@@ -1,12 +1,10 @@
 .room {
   position: relative;
-  padding-top: 235px;
+  padding-top: 285px;
   padding-bottom: 22px;
-  padding-left: 284px;
-  padding-right: 348px;
-  background-image: url(img/room-background-min.jpg);
-  background-position: left 0 bottom 0;
+  background: url(img/room-background-min.jpg) 50% 100% fixed;
   background-size: cover;
+  background-position: bottom 0;
 }
 
 .room::after {
@@ -24,6 +22,9 @@
 .room__menu {
   display: flex;
   justify-content: space-between;
+  margin: 0 auto;
+  max-width: 875px;
+  width: 100%;
 }
 
 .room__navigation {
@@ -40,6 +41,7 @@
 .room__value {
   position: relative;
   z-index: 1;
+  padding-right: 67px;
 }
 
 .room__price {
@@ -54,7 +56,7 @@
   vertical-align: top;
   font-size: 10.5px;
   line-height: 2.6;
-  letter-spacing: 1px;
+  letter-spacing: 0.8px;
   color: #ffffff;
   text-transform: uppercase;
 }
@@ -76,7 +78,7 @@
 .apartment__container {
   display: flex;
   justify-content: space-between;
-  padding-left: 284px;
+  margin: 0 auto;
   max-width: 878px;
   width: 100%;
 }
@@ -164,7 +166,7 @@
 
 .apartment__icon {
   margin: 0 auto;
-  margin-bottom: 7px;
+  margin-bottom: 9px;
   width: 29px;
   height: 29px;
 }
@@ -284,7 +286,6 @@
 
 .reservation__button {
   padding: 3px 0;
-  max-width: 233px;
   width: 100%;
   background-color: #c19b76;
   border: solid 1.5px #c19b76;
@@ -303,9 +304,39 @@
   }
 }
 
-@media screen and (min-width: 1024px) and (max-width: 1439px) {
+@media screen and (min-width: 1260px) and (max-width: 1439px) {
+  .apartment__description {
+    max-width: 500px;
+  }
+
+  .apartment__image {
+    width: 500px;
+  }
+
+  .apartment__text {
+    max-width: 490px;
+  }
+
+  .apartment__wrap::after {
+    width: 500px;
+  }
+
+  .apartment__text {
+    font-size: 10px;
+  }
+
+  .apartment__text::after {
+    width: 500px;
+  }
+
+  .reservation {
+    max-width: 260px;
+  }
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1259px) {
   .room {
-    padding-top: 120px;
+    padding-top: 156px;
     padding-bottom: 11px;
     padding-left: 202px;
     padding-right: 244px;
@@ -313,6 +344,10 @@
 
   .room__navigation {
     width: 72.5%;
+  }
+
+  .room__value {
+    padding-right: 0;
   }
 
   .room__price {
@@ -338,13 +373,12 @@
   }
 
   .apartment__subtitle {
-    margin-bottom: 12px;
+    margin-bottom: 11px;
     max-width: 625px;
     letter-spacing: 0.22px;
   }
 
   .apartment__container {
-    padding-left: 200px;
     width: 60.8%;
   }
 
@@ -398,10 +432,9 @@
   }
 
   .apartment__text {
-    margin-bottom: 10px;
+    margin-bottom: 15px;
     max-width: 400px;
     letter-spacing: 0.58px;
-    line-height: 2.05;
     text-align: left;
   }
 
@@ -453,7 +486,7 @@
   }
 
   .reservation__date {
-    padding: 4px 0 8px;
+    padding: 4px 0 7px;
     width: 45%;
   }
 
@@ -487,25 +520,12 @@
   .reservation__button {
     padding: 3px 0;
   }
-
-  .footer {
-    padding: 15px 0 0 195px;
-    height: 33px;
-  }
-
-  .footer__navigation {
-    width: 405px;
-    font-size: 11px;
-    line-height: 1.32;
-    letter-spacing: 1px;
-  }
-
 }
 
 @media screen and (max-width: 1023px) {
   .room {
     padding: 0;
-    height: 205px;
+    height: 239px;
   }
 
   .room__menu {
@@ -519,8 +539,9 @@
 
   .apartment__title-top {
     position: absolute;
-    top: -115px;
-    left: 130px;
+    top: -117px;
+    left: 50%;
+    margin-left: -190px;
     max-width: 500px;
     font-size: 48px;
     line-height: 0.63;
@@ -535,8 +556,7 @@
 
   .apartment__container {
     flex-direction: column-reverse;
-    padding-left: 54px;
-    max-width: 559px;
+    max-width: 526px;
     width: 100%;
   }
 
@@ -563,7 +583,7 @@
 
   .apartment__wrap::after {
     display: none;
-}
+  }
 
   .apartment__part-right {
     margin-right: 35px;
@@ -637,7 +657,7 @@
   }
 
   .reservation__part {
-    margin: 0 79px 24px 73px;
+    margin: 0 79px 22px 73px;
   }
 
   .reservation__date {
@@ -676,17 +696,4 @@
     padding: 22px 30px;
     max-width: 460px;
   }
-
-  .footer {
-    padding: 16px 0 0 59px;
-    height: 28px;
-  }
-
-  .footer__navigation {
-    width: 407px;
-    font-size: 11px;
-    line-height: 1.32;
-    letter-spacing: 1.7px;
-  }
-
 }
