@@ -16,7 +16,7 @@
   opacity: 0.7;
 }
 
-.search__title {
+.title__search {
   position: relative;
   font-size: 52px;
   line-height: 1.29;
@@ -50,33 +50,35 @@
 }
 
 .list__description {
-  padding-top: 25px;
+  padding-top: 26px;
   padding-left: 24px;
   border: solid 0.8px #f1f1f1;
 }
 
-.list__description .rooms__text {
+.list__description .text__rooms {
   margin-bottom: 16px;
   letter-spacing: 0.62px;
 }
 
-.list__button {
+.button__list {
   margin-bottom: 24px;
-  padding: 5px 45px 5px 22px;
+  padding: 5px 45px 6px 22px;
   border: solid 1.5px #c9a787;
   color: #c9a787;
+  font-size: 8.5px;
+  line-height: 2.41;
 }
 
-.list__button:hover {
+.button__list:hover {
   box-shadow: 0 0 8px 0 #c9a787 inset, 0 0 8px 3px #c9a787;
   transition: box-shadow 0.2s ease-in;
 }
 
-.list__button-bottom {
+.button__list-bottom {
   margin-bottom: 29px;
 }
 
-.list__form {
+.form__list {
   width: 31.6%;
 }
 
@@ -103,55 +105,67 @@
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  padding: 0 22px;
+  padding: 0 40px;
   background-color: #151515;
 }
 
-.form__input-group-width {
+.form__input-group {
+  display: flex;
   flex-direction: column;
-  box-sizing: border-box;
-  max-width: 100px;
-  width: 100%;
+  width: 80px;
 }
 
 .form__input-group-bottom {
-  margin-bottom: 43px;
+  margin-bottom: 40px;
 }
 
-.form__input-left {
-  padding-left: 10px;
-}
-
-.form__label-light {
+.form__label {
+  font-family: 'Roboto', sans-serif;
+  font-size: 9px;
+  line-height: 2.28;
+  letter-spacing: 1.6px;
   color: #ffffff;
+  text-align: center;
 }
 
 .form__part {
-  padding-left: 16px;
+  display: flex;
+  justify-content: space-between;
+  width: 71px;
 }
 
-.form__input-black {
-  margin-right: 3px;
-  margin-left: 3px;
+.form__input {
   width: 50px;
   background-color: #151515;
   border: solid 0.8px #151515;
   color: #ffffff;
+  font-family: 'Gilda Display', serif;
+  font-size: 37.5px;
+  line-height: 0.55;
+  letter-spacing: -2.25px;
+  text-align: center;
 }
 
-.form__input-black::placeholder {
+.form__input::placeholder {
   color: #c19b76;
 }
 
-.form__input-light {
-  padding-left: 10px;
-  font-size: 9.5px;
-  line-height: 2.16;
-  letter-spacing: -0.19px;
+.form__input-width {
+  width: 70px;
 }
 
-.form__input-light::placeholder {
-  color: #ffffff;
+.form__select{
+  -webkit-appearance: none;
+  border: none;
+  background-color: #151515;
+  color: #c19b76;
+  font-family: 'Gilda Display', serif;
+  font-size: 9px;
+  letter-spacing: 1px;
+}
+
+.form__select:focus {
+  outline: none;
 }
 
 .form__input-small {
@@ -169,22 +183,6 @@
   text-align: left;
 }
 
-.form__input-left {
-  margin-left: 8px;
-}
-
-.form__input-small::placeholder {
-  color: #ffffff;
-}
-
-
-.form__select-black {
-  padding-top: 11px;
-  vertical-align: top;
-  background-color: #151515;
-  color: #c19b76;
-}
-
 .form__services {
   padding-top: 43px;
 }
@@ -199,9 +197,9 @@
   background-color: #f9f9f9;
 }
 
-.form__title {
+.title__form {
   margin: 0 auto;
-  margin-bottom: 44px;
+  margin-bottom: 40px;
   font-family: 'Gilda Display', serif;
   font-size: 15px;
   line-height: 1.37;
@@ -209,13 +207,13 @@
   color: #ffffff;
 }
 
-.form__title-grey {
+.title__form-grey {
   margin-bottom: 9px;
   letter-spacing: 0.9px;
   color: #1c1c1c;
 }
 
-.form__title-bottom {
+.title__form-bottom {
   margin-bottom: 14px;
 }
 
@@ -317,7 +315,7 @@
 }
 
 .rooms__part-bottom {
-  margin-bottom: 13px;
+  margin-bottom: 14px;
 }
 
 .rooms__item-size {
@@ -332,7 +330,7 @@
   margin-right: 8px;
 }
 
-.rooms__button {
+.button__rooms {
   padding: 7px 20px 5px 26px;
   background-color: #1c1c1c;
   border: solid 1.5px #1c1c1c;
@@ -356,7 +354,14 @@
   flex-wrap: wrap;
 }
 
-.rooms__title {
+.title__rooms {
+  margin-bottom: 10px;
+  color: #000000;
+  font-size: 22.5px;
+  line-height: 0.71;
+}
+
+.rooms__heading {
   display: none;
 }
 
@@ -365,7 +370,7 @@
     padding: 89px 0 42px 0;
   }
 
-  .search__title {
+  .title__search {
     font-size: 32px;
     line-height: 1.48;
   }
@@ -402,7 +407,7 @@
     padding: 0 17px 0 10px;
   }
 
-  .form__title {
+  .title__form {
     margin-bottom: 29px;
     font-size: 11px;
     line-height: 1.32;
@@ -440,7 +445,7 @@
   }
 
   .form__input-group-bottom {
-    margin-bottom: 17px;
+    margin-bottom: 27px;
   }
 
   .form__input-black {
@@ -468,7 +473,7 @@
     width: 199px;
   }
 
-  .form__title-grey {
+  .title__form-grey {
     margin-bottom: 2px;
   }
 
@@ -493,7 +498,7 @@
     width: 199px;
   }
 
-  .form__title-bottom {
+  .title__form-bottom {
     margin-bottom: 9px;
   }
 
@@ -538,17 +543,21 @@
   }
 
   .list__description .text {
-    line-height: 2;
     letter-spacing: -0.01px;
   }
 
-  .list__description .rooms__text {
-    margin-bottom: 11px;
+  .list__description .text__rooms {
+    margin-bottom: 12px;
   }
 
-  .list__button {
+  .title__rooms {
+    font-size: 16px;
+    line-height: 0.6;
+  }
+
+  .button__list {
     margin-bottom: 24px;
-    padding: 3px 35px 2px 35px;
+    padding: 5px 34px 3px 35px;
     width: 165px;
     line-height: 1.5;
   }
@@ -557,7 +566,7 @@
     width: 63.5%
   }
 
-  .rooms__title-small {
+  .title__rooms-small {
     margin-bottom: 7px;
     font-size: 16px;
     line-height: 0.72;
@@ -574,17 +583,15 @@
   .rooms__element {
     margin-right: 2px;
   }
-
 }
 
 
 @media screen and (max-width: 1023px) {
-
   .search {
     padding: 117px 0 89px 0;
   }
 
-  .search__title {
+  .title__search {
     font-size: 48px;
     line-height: 0.63;
     letter-spacing: -0.8px;
@@ -600,7 +607,7 @@
     max-width: 527px;
   }
 
-  .list__form {
+  .form__list {
     width: 100%;
   }
 
@@ -614,19 +621,23 @@
     display: none;
   }
 
-  .form__title {
+  .title__form {
     font-size: 22px;
     line-height: 0.41;
     letter-spacing: 0.4px;
     text-align: center;
   }
 
-  .form__inner .form__title {
+  .form__inner .title__form {
     margin-bottom: 26px;
   }
 
+  .form__input-group {
+    width: 100px;
+  }
+
   .form__label {
-    margin-bottom: 10px;
+    margin-bottom: 6px;
     font-size: 14px;
     line-height: 0.64;
     letter-spacing: 2.7px;
@@ -637,8 +648,12 @@
     flex-direction: column;
   }
 
+  .form__input {
+    width: 90px;
+  }
+
   .form__select {
-    margin-left: 15px;
+    margin-left: 33px;
     font-size: 20px;
     line-height: 1;
     letter-spacing: -1.2px;
@@ -662,7 +677,7 @@
   }
 
   .form__services {
-    padding-top: 41px;
+    padding-top: 39px;
   }
 
   .form__services::after {
@@ -673,8 +688,8 @@
     padding: 0 21px 0 54px;
   }
 
-  .form__services .form__title-grey {
-    margin-bottom: 25px;
+  .form__services .title__form-grey {
+    margin-bottom: 32px;
   }
 
   .form__item {
@@ -693,10 +708,10 @@
   }
 
   .form__size {
-    padding-top: 32px;
+    padding-top: 26px;
   }
 
-  .form__size .form__title-bottom {
+  .form__size .title__form-grey {
     margin-bottom: 20px;
   }
 
@@ -733,7 +748,7 @@
     padding-top: 52px;
   }
 
-  .form__reviews .form__title-bottom {
+  .form__reviews .title__form-grey {
     margin-bottom: 47px;
     letter-spacing: 1.2px;
   }
@@ -758,7 +773,7 @@
     padding-top: 32px;
   }
 
-  .rooms__title {
+  .rooms__heading {
     display: block;
     margin-bottom: 16px;
     font-family: 'Gilda Display', serif;
@@ -813,7 +828,7 @@
     padding-right: 30px;
   }
 
-  .list__description .rooms__text {
+  .list__description .text__rooms {
     margin-bottom: 8px;
     letter-spacing: 0.93px;
   }
@@ -823,16 +838,16 @@
     letter-spacing: 1.9px;
   }
 
-  .list__button {
+  .button__list {
     padding: 8px 16px 7px 14px;
   }
 
-  .rooms__title-small {
+  .title__rooms-small {
     font-size: 22px;
     line-height: 0.7;
   }
 
-  .rooms__text {
+  .text__rooms {
     margin-bottom: 9px;
     font-size: 16px;
     line-height: 1.5;
@@ -845,5 +860,4 @@
     line-height: 0.64;
     letter-spacing: 2.5px;
   }
-
 }
